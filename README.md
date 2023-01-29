@@ -1,10 +1,25 @@
-# vue3+ts+vite+scss搭建组件库
+# vue3组件库
 
 **第五届青训营项目（队名：动态数组）**
 
 **组件库名称**：`dtsz-ui`
 
 **github地址**：[zzyyhh22lx/dtsz-ui: vue3组件库-青训营项目 (github.com)](https://github.com/zzyyhh22lx/dtsz-ui)
+
+**技术栈：**`vue3、ts、scss、pnpm、vite`
+
+
+
+```shell
+git clone git@github.com:zzyyhh22lx/dtsz-ui.git
+npm i pnpm -g
+pnpm install
+
+cd play
+pnpm run dev
+```
+
+
 
 
 
