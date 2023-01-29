@@ -56,7 +56,7 @@ function createBEM(prefixName: string) {
       blockName && elementName && modifierName
         ? _bem(prefixName, blockName, elementName, modifierName)
         : "";
-    const is = (name = "", state = "") => (state ? `is-${name}` : "");
+    const is = (name = "", state: boolean) => (state ? `is-${name}` : "");
     return {
       b,
       e,
@@ -73,3 +73,10 @@ export function createNamespace(name: string) {
     const prefixName = `dtsz-${name}`;
     return createBEM(prefixName);
 }
+
+// var bem = createNamespace("button");
+// console.log(bem.b()); // dtsz-button
+// console.log(bem.e("hy")); // dtsz-button__hy
+// console.log(bem.m("primary")); // dtsz-button--primary
+// console.log(bem.is("checked", true)); // is-checked
+// console.log(bem.bem("success", "element", "disabled")); // dtsz-button-success__element--disabled

@@ -1,7 +1,7 @@
 @use 'config' as *;
 @forward 'config';
 
-// hy-icon
+// dtsz-icon
 @mixin b($block) {
   $B: $namespace + '-' + $block;
   .#{$B} {
@@ -9,7 +9,7 @@
   }
 }
 
-// hy-icon.is-xxx
+// dtsz-icon.is-xxx
 @mixin when($state) {
   @at-root {
     &.#{$state-prefix + $state} {
@@ -18,8 +18,7 @@
   }
 }
 
-// .hy-icon--primary
-
+// .dtsz-icon--primary
 @mixin m($modifier) {
   @at-root {
     #{& + $modifier-separator + $modifier} {
@@ -28,7 +27,7 @@
   }
 }
 
-// hy-icon__header
+// dtsz-icon__header
 @mixin e($element) {
   @at-root {
     #{& + $element-separator + $element} {

@@ -1,15 +1,17 @@
 {
-  "name": "dtsz-ui",
+  "name": "play",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dtsz-ui/utils": "workspace:^1.0.0"
+    "@dtsz-ui/theme-chalk": "workspace:^1.0.0",
+    "dtsz-ui": "workspace:^1.0.0"
   }
 }

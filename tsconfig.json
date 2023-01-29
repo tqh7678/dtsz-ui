@@ -21,7 +21,7 @@
       "resolveJsonModule": true, // 解析json模块
       "strict": true, // 是否启动严格模式
       "skipLibCheck": true, // 跳过类库检测
-      "types": ["unplugin-vue-define-options"] // sfc 添加 name属性的包需要的
+    //   "types": ["unplugin-vue-define-options"] // sfc 添加 name属性的包需要的
     },
     "exclude": [
       // 排除掉哪些类库

@@ -1,0 +1,112 @@
+$namespace: 'dtsz';
+$element-separator: '__'; // 元素连接符
+$modifier-separator: '--'; // 修饰符连接符
+$state-prefix: 'is-'; // 状态连接符
+
+// 全局样式定义
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif; /* 默认字体 */
+  font-size: 100%; /* 调整字体大小 */
+  -ms-text-size-adjust: 100%; /* IE浏览器 */
+ -webkit-text-size-adjust: 100%; /* FireFox浏览器 */
+}
+body{
+  margin: 0; /* 外边距 */
+  padding: 0; /* 内边距 */
+  border: 0; /* 边框 */
+}
+a {
+  text-decoration: none; /* 去除默认下划线 */
+}
+a:focus {
+   outline:thin dotted; /* 处理“outline”在Chrome浏览器中和其它浏览器之间的不一致 */
+}
+a:active, a:hover {
+    outline: 0;
+}
+h1 {
+  /* 使h1标签在section标签和article标签的留白和字体样式统一。 */
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+b, strong {
+   font-weight: bold; /* 添加加粗样式*/
+}
+dfn {
+ font-size:italic; /* 添加斜体样式 */
+}
+hr {
+ /* 解决其在Firefox中的兼容性问题 */
+-moz-box-sizing: content-box;
+ box-sizing: content-box;
+ height: 0;
+}
+mark {
+/* 解决样式未定义的问题 */
+background: #ff0;
+color: #000;
+}
+code, kbd, pre, samp {
+    /* 更正关联字体的老式设置 */
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+       /* 提高pre标签格式化文本的可读性 */
+       white-space: pre-wrap;
+}
+q {
+    /* 设置相一致的引号类型 */
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+     /* 统一所有字体大小 */
+     font-size: 80%;
+}
+sub, sup {
+       /* 防止“sub”和“sup”标签影响“line-height”属性 */
+       font-size: 75%;
+       line-height: 0;
+       position: relative;
+       vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+img {
+  border: 0; /*当img标签中包含a标签时，去除img边框属性。 */
+}
+svg:not(:root) {
+     overflow: hidden;
+}
+fieldset {
+  /* 定义一致的边框、内边距和外边距 */
+ border: 1px solid #c0c0c0;
+ margin: 0 2px;
+ padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0; 
+    padding: 0; /* 去除外边距*/
+}
+button, input, select, textarea {
+   font-family: inherit; /* 更改关联字体属性 */
+   font-size: 100%; /* 更改字体大小属性 */
+   margin: 0; /* 调整边距设置 */
+}
+button, input {
+  line-height: normal; 
+}
+button, select {
+text-transform: none;
+/**
+* 调整“button”和“select”的“text-transform”继承不一致性的问题 
+*其他表单控件元素不继承“text-transform”属性
+*/
+}
